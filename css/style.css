@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e2e7ec;
+}
+
+p {
+	margin: 0;
+}
+
+.bg-flex {
+	max-width: 1140px;
+	margin: 90px auto;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bg-item {
+	min-height: 540px;
+
+	background-color: #fff;
+
+	flex-grow: 1;
+	flex-basis: 360px;
+
+	margin: 0 10px 20px;
+
+	overflow: hidden;
+}
+
+.bg-item-huge {
+	flex-basis: 740px;
+	flex-grow: 2;
+	line-height: 0;
+
+	/*flex: 2 740px;*/
+
+	/*order: 2;*/
+}
+
+.bg-item-huge__photo {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.bg-item__link, .bg-item-huge__link {
+	display: block;
+	position: relative;
+}
+
+.bg-item-huge__info {
+	position: absolute;
+	left: 40px;
+	right: 40px;
+	bottom: 40px;
+}
+
+.bg-item-huge__date {
+	font-size: 13px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #818181;
+	letter-spacing: 0.025em;
+}
+
+.bg-item-huge__text {
+	font-size: 30px;
+	line-height: 36px;
+	letter-spacing: 0.025em;
+	color: #fff;
+	text-transform: uppercase;
+	padding-right: 40%;
+}
+
+.bg-item-huge__shadow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,1+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
